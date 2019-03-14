@@ -21,9 +21,9 @@ function currentLine(line) {
 
     for (;i < len; i++) {
       if (i > 0) {
-        `${waitingLine} + , + ${i + 1} + ' ' + ${line[i]}`
+        waitingLine = `${waitingLine} + , + ${i + 1} + ' ' + ${line[i]}`
       } else {
-        `${waitingLine} + ${i + 1} + ' ' + ${line[i]}`
+        waitingLine = `${waitingLine} + ${i + 1} + ' ' + ${line[i]}`
       }
     }
     return waitingLine
